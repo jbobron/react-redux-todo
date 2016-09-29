@@ -10,7 +10,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    addTodo: text => dispatch(addTodo(text)),
+    addTodo: text => dispatch(addTodo(text)), //dispatch sends the action to the store
     toggleTodo: id => dispatch(toggleTodo(id))
   };
 }
